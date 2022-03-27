@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:laundryapp/pages/homepage.dart';
+import 'package:laundryapp/pages/loginpage.dart';
 import 'package:laundryapp/utils/constants.dart';
 
 void main() {
@@ -39,6 +40,12 @@ Route<dynamic> _onGeneratedRoute(RouteSettings settings) {
       return MaterialPageRoute<void>(
         settings: settings,
         builder: (BuildContext context) => const HomePage(),
+        fullscreenDialog: true,
+      );
+    case '/login':
+      return MaterialPageRoute<void>(
+        settings: settings,
+        builder: (BuildContext context) => const LoginPage(),
         fullscreenDialog: true,
       );
     default:
