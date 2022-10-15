@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Contants.primaryColor,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
+        children: [ 
           Expanded(
             flex: 3,
             child: Stack(
